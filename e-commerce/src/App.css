@@ -1,0 +1,10 @@
+.topSection{
+  display: flex;
+  justify-content: space-between;
+}
+.TSRightSide{
+  display: flex;
+}
+.TSRSitems{
+  display: flex;
+}
