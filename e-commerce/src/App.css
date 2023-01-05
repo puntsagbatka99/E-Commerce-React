@@ -30,7 +30,7 @@ body{
 }
 
 
-/* HEADER */
+/* ---------------------HEADER--------------------- */
 
 header{
   display: flex;
@@ -107,8 +107,51 @@ header{
   font-size: 10px;
 }
 
+/* ------------------MAIN MENU------------------ */
+
+.mainMenu{
+  height: 70px;
+}
+.bigSubMenu{
+  width: 218px;
+  height: 70px;
+  background-color: #EDA415;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .days{
   font-size: 16px;
   font-weight: 700;
   color: #003F62;
+}
+
+/* -------------------SLIDER------------------- */
+
+.slider{
+  width: 100%;
+  height: 394px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 38px;
+}
+.sliderRightSide{
+  background-image: url("../public/images/images/camera.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 356px;
+  width: 331px;
+  position: relative;
+  
+}
+
+.price{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  right: -31px;
+  bottom: 53px;
+  font-weight: 600;
+  font-size: 22px;
 }

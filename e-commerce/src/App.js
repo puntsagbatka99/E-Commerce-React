@@ -1,6 +1,7 @@
 
 import './App.css';
 import MainMenu from './components/MainMenu';
+import Slider from './components/Slider';
 
 
 function App() {
@@ -42,11 +43,11 @@ function App() {
           </a>
         </div>
       </header>
-      <div className="App">
-        <div className='menu-container'>
-          <MainMenu />
-        </div>
-
+      <div className='menu-container'>
+        <MainMenu />
+      </div>
+      <div>
+        <Slider />
       </div>
     </div>
   );
