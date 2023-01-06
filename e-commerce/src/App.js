@@ -2,9 +2,15 @@
 import './App.css';
 import MainMenu from './components/MainMenu';
 import Slider from './components/Slider';
+import sliders from './data/slider';
+import AliceCarousel from 'react-alice-carousel'
 
 
 function App() {
+  const sliderData = sliders.map(item =>
+    <Slider title={item.title} image={item.image} price={item.price} />
+  )
+
   return (
     <div className="container">
       <div className="topSection">
@@ -47,7 +53,13 @@ function App() {
         <MainMenu />
       </div>
       <div>
-        <Slider />
+        <AliceCarousel
+          autoPlay={true}
+          autoPlayInterval={3000}
+          infinite={true}
+          disableButtonsControls>
+          {sliderData}
+        </AliceCarousel>
       </div>
     </div>
   );
