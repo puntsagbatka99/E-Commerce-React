@@ -4,6 +4,8 @@ import MainMenu from './components/MainMenu';
 import Slider from './components/Slider';
 import sliders from './data/slider';
 import AliceCarousel from 'react-alice-carousel'
+import PPSection from './components/PPSection';
+
 
 
 function App() {
@@ -60,6 +62,9 @@ function App() {
           disableButtonsControls>
           {sliderData}
         </AliceCarousel>
+      </div>
+      <div>
+        <PPSection/>
       </div>
     </div>
   );
