@@ -52,10 +52,10 @@ function App() {
       <div className='menu-container'>
         <MainMenu />
       </div>
-      <div>
+      <div className='bigSlider'>
         <AliceCarousel
           autoPlay={true}
-          autoPlayInterval={3000}
+          autoPlayInterval={5000}
           infinite={true}
           disableButtonsControls>
           {sliderData}
