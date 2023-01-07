@@ -130,6 +130,9 @@ header{
 }
 
 /* -------------------SLIDER------------------- */
+.bigSlider{
+  position: relative;
+}
 
 .slider{
   width:100%;
@@ -163,3 +166,26 @@ header{
   font-weight: 600;
   font-size: 22px;
 }
+
+.alice-carousel__dots-item:not(.__custom):hover, .alice-carousel__dots-item:not(.__custom).__active {
+  background-color: #EDA415 !important;
+}
+
+.alice-carousel__dots-item:not(.__custom) {
+  width: 16px !important;
+  height: 16px !important;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #ADADAD !important;
+  background-color: white !important;
+} 
+.alice-carousel__dots {
+  margin: 30px 3px 5px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  position: absolute;
+  left: 271px;
+  bottom: 100px;
+}
+
