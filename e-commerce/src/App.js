@@ -63,7 +63,7 @@ function App() {
           {sliderData}
         </AliceCarousel>
       </div>
-      <div>
+      <div className='PPSection'>
         <PPSection/>
       </div>
     </div>

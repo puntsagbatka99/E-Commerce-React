@@ -1,7 +1,6 @@
 
-const subPPItem = ((props)=>{
-
-    return(
+const subPPItem = ((props) => {
+    return (
         <div>
             <div className="smallHeart"><img src="" alt="" /></div>
             <div className="smallTruck"><img src="" alt="" /></div>
@@ -12,4 +11,4 @@ const subPPItem = ((props)=>{
     )
 })
 
-
+export default subPPItem;
