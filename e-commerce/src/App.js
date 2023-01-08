@@ -4,7 +4,7 @@ import MainMenu from './components/MainMenu';
 import Slider from './components/Slider';
 import sliders from './data/slider';
 import AliceCarousel from 'react-alice-carousel'
-import PPSection from './components/PPSection';
+import PopularProducts from "./components/PPSection"
 
 
 
@@ -64,7 +64,7 @@ function App() {
         </AliceCarousel>
       </div>
       <div className='PPSection'>
-        <PPSection/>
+        <PopularProducts/>
       </div>
     </div>
   );

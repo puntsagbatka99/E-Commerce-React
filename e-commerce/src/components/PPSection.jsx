@@ -1,19 +1,30 @@
-import AliceCarousel from "react-alice-carousel";
-import { Carousel } from "react-bootstrap";
-import PPItems from "../data/popularProductItems";
-import subPPItem from "./PopularProducts";
+
+import PPItems from "../data/popularProductItems"
+import PPhead from "../data/PPhead"
+import ProductFunc from "./PopularProducts"
+import PPheaderRightSide from "./PPheader"
 
 
-export default function PPSection() {
-    const PPItem = PPItems.map(items =>{
-        
-        return(
-            <subPPItem image={items.image} title={items.title} price={items.price}/>
+function PopularProducts() {
+    const PopularProductItemFunc = PPItems.map(element => {
+        return (
+            <ProductFunc title={element.title} price={element.price} image={element.image} />
         )
-        console.log(PPItem)
+    })
+    const PPheader = PPhead.map(items => {
+        <PPheaderRightSide title={items.title} />
     })
 
-    return(
-        <div>{PPItem}</div>
+    return (
+        <div className="row">
+            <div style={{display:"flex", justifyContent:"space-between"}}>
+                <h2 style={{ color: "#1B5A7D", fontSize: "28px", fontWeight: "500" }}>Popular Products</h2>
+                <div>
+                    {PPheader}
+                </div>
+            </div>
+            {PopularProductItemFunc}
+        </div>
     )
 }
+export default PopularProducts;
