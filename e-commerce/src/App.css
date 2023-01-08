@@ -189,5 +189,19 @@ header{
   bottom: 100px;
 }
 
+/* --------------SALE PICTURE SECTION-------------- */
+.salePicture{
+  background-image: url(../public/images/images/salePic.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 417px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+/* ----------------------------------------*/
+
 
 
