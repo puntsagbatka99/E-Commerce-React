@@ -5,6 +5,8 @@ import Slider from './components/Slider';
 import sliders from './data/slider';
 import AliceCarousel from 'react-alice-carousel'
 import PopularProducts from "./components/PPSection"
+import SalePic from './components/SalePicture';
+import SpeakerSection from './components/Speaker';
 
 
 
@@ -66,6 +68,10 @@ function App() {
       <div className='PPSection'>
         <PopularProducts/>
       </div>
+      <div className='salePic'>
+        <SalePic/>
+      </div>
+      <SpeakerSection/>
     </div>
   );
 }
