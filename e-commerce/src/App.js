@@ -7,6 +7,8 @@ import AliceCarousel from 'react-alice-carousel'
 import PopularProducts from "./components/PPSection"
 import SalePic from './components/SalePicture';
 import SpeakerSection from './components/Speaker';
+import bannerItems from './data/banner';
+import Banners from './components/Banner';
 
 
 
@@ -14,6 +16,10 @@ function App() {
   const sliderData = sliders.map(item =>
     <Slider title={item.title} image={item.image} price={item.price} />
   )
+
+  const banners = bannerItems.map(element => 
+      <Banners image={element.image} title={element.title} text={element.text} />
+    )
 
   return (
     <div className="container">
@@ -66,12 +72,13 @@ function App() {
         </AliceCarousel>
       </div>
       <div className='PPSection'>
-        <PopularProducts/>
+        <PopularProducts />
       </div>
       <div className='salePic'>
-        <SalePic/>
+        <SalePic />
       </div>
-      <SpeakerSection/>
+      <SpeakerSection />
+      <div className='bannerSection'>{banners}</div>
     </div>
   );
 }

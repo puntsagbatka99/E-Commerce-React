@@ -8,7 +8,7 @@ import PPheaderRightSide from "./PPheader"
 function PopularProducts() {
     const PopularProductItemFunc = PPItems.map(element => {
         return (
-            <ProductFunc title={element.title} price={element.price} image={element.image} />
+            <ProductFunc title={element.title} price={element.price} image={element.image} id={element.id}/>
         )
     })
     const PPheader = PPhead.map(items => {

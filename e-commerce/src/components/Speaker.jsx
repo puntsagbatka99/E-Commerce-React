@@ -17,8 +17,8 @@ export default function SpeakerSection() {
                     <Button style={{ display: "flex", justifyContent: "space-around", alignItems: "center", width: "205px", height: "60px", backgroundColor: "#87BCD9", border: "1px solid #87BCD9", borderRadius: "20px", fontSize: "16px", fontWeight: "600", color: "black", textAlign: "start" }}>Add to Cart <div style={{ display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "#EDA415", width: "31px", height: "31px", borderRadius: "50px" }}><img style={{ width: "17px", height: "17px" }} src="images/symbols/truck.png" alt="" /></div></Button>
                 </div>
             </div>
-            <div style={{ width: "39%" }}>
-                <div style={{ display: "flex", height: "241px", border: "1px solid #B6B6B6", borderRadius: "20px" }}>
+            <div style={{display:"flex", flexDirection:"column", justifyContent:"space-between", width: "39%" }}>
+                <div style={{ display: "flex", justifyContent:"space-around", height: "241px", border: "1px solid #B6B6B6", borderRadius: "20px" }}>
                     <img src="images/images/game.png" alt="speaker" />
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                         <h4 style={{ fontSize: "17px", fontWeight: "500", color: "#003F62" }}>Play Game</h4>
@@ -29,7 +29,7 @@ export default function SpeakerSection() {
                             color2={'#ffd700'} />
                     </div>
                 </div>
-                <div style={{ display: "flex", height: "241px", border: "1px solid #B6B6B6", borderRadius: "20px" }}>
+                <div style={{ display: "flex", justifyContent:"space-around", height: "241px", border: "1px solid #B6B6B6", borderRadius: "20px" }}>
                     <img src="images/images/laptop.png" alt="speaker" />
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
                         <h4 style={{ fontSize: "17px", fontWeight: "500", color: "#003F62" }}>Play Game</h4>

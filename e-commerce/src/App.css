@@ -204,4 +204,12 @@ header{
 /* ----------------------------------------*/
 
 
+.bannerSection{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 155px;
+  background-color: #E2F4FF;
+  border-radius: 20px;
 
+}
