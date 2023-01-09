@@ -12,7 +12,9 @@ function PopularProducts() {
         )
     })
     const PPheader = PPhead.map(items => {
+        return(
         <PPheaderRightSide title={items.title} />
+        )
     })
 
     return (
