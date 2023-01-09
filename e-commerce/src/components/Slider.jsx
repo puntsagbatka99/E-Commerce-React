@@ -1,7 +1,7 @@
 
 import { Button } from 'react-bootstrap';
 
-function Slider(props) {
+function Sliders(props) {
     return (
         
         <div className='slider'>
@@ -21,4 +21,4 @@ function Slider(props) {
     )
 }
 
-export default Slider;
+export default Sliders;
