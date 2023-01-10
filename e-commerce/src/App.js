@@ -15,6 +15,7 @@ import Slider from 'react-slick';
 import Partners from './components/Partners';
 import partner from './data/partners';
 import LastSliderFull from './components/LastSliderFull';
+import Footer from './components/Footer';
 
 
 
@@ -110,6 +111,7 @@ function App() {
         {PartnerCompanies}
       </div>
       <LastSliderFull/>
+      <Footer/>
     </div>
   );
 }
