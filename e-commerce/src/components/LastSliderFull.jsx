@@ -17,7 +17,7 @@ export default function LastSliderFull(){
       };
 
     return(
-        <div style={{marginTop:"100px"}}>
+        <div style={{marginTop:"100px",marginBottom:"80px"}}>
             <div style={{display:"flex", justifyContent:"space-between",marginBottom:"50px"}}>
                 <h1 style={{fontSize:"25px", fontWeight:"600", color:"#1B5A7D"}}>Latest News</h1>
                 <h3 style={{fontSize:"20px", fontWeight:"500", color:"#1B5A7D"}}>View All</h3>
