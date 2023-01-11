@@ -16,10 +16,18 @@ import Partners from './components/Partners';
 import partner from './data/partners';
 import LastSliderFull from './components/LastSliderFull';
 import Footer from './components/Footer';
+import secondSliderData from './data/secondSlider';
+import SecondSlider from './components/SecondSlider';
 
 
 
 function App() {
+  const secondSlider = secondSliderData.map(element => {
+    return(
+    <SecondSlider image={element.image} title={element.title} items={element.items}/>
+    )
+  })
+
   const sliderData = sliders.map(item =>
     <Sliders title={item.title} image={item.image} price={item.price} />
   )
@@ -96,6 +104,9 @@ function App() {
           {sliderData}
         </AliceCarousel>
       </div>
+      <Slider {...settings} className="secondSlider">
+        {secondSlider}
+      </Slider>
       <div className='PPSection'>
         <PopularProducts />
       </div>

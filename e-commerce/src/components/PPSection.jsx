@@ -19,7 +19,7 @@ function PopularProducts() {
 
     return (
         <div className="row">
-            <div style={{display:"flex", justifyContent:"space-between"}}>
+            <div style={{display:"flex", justifyContent:"space-between", marginBottom:"50px"}}>
                 <h2 style={{ color: "#1B5A7D", fontSize: "28px", fontWeight: "500" }}>Popular Products</h2>
                 <div>
                     {PPheader}

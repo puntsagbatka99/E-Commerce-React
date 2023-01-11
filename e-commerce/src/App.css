@@ -255,3 +255,10 @@ header{
 .slick-dots li.slick-active button:before {
   opacity: 1 !important;
 }
+
+li::marker{
+  color: #D9D9D9;
+}
+.secondSlider{
+  margin-bottom: 80px;
+}
