@@ -19,7 +19,7 @@ export default function MainMenu(){
         )
     })
     return(
-            <Navbar className="mainMenu" bg="light" expand="lg">
+            <Navbar style={{display:"flex", justifyContent:"space-around"}} className="mainMenu" bg="light" expand="lg">
                 {biggyMenu}
                 {subMenus}
                 <div className="days">30 Days Free Return</div>
