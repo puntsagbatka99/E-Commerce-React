@@ -47,5 +47,5 @@ const PPItems = [
         price: "$11.70",
         id: 8
     }
-]
+    ]
 export default PPItems;
