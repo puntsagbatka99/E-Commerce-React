@@ -1,4 +1,3 @@
-
 import './App.css';
 import MainMenu from './components/MainMenu';
 import Sliders from './components/Slider';
@@ -26,8 +25,8 @@ import Header from './components/Header';
 
 function App() {
   const secondSlider = secondSliderData.map(element => {
-    return(
-    <SecondSlider image={element.image} title={element.title} items={element.items}/>
+    return (
+      <SecondSlider image={element.image} title={element.title} items={element.items} />
     )
   })
 
@@ -40,8 +39,8 @@ function App() {
   )
 
   const profileSection = profileData.map(item => {
-    return(
-    <ProfileItems image={item.image} name={item.name} text={item.text} />
+    return (
+      <ProfileItems image={item.image} name={item.name} text={item.text} />
     )
   })
   var settings = {
@@ -52,15 +51,15 @@ function App() {
     slidesToScroll: 3
   };
 
-  const PartnerCompanies = partner.map(item =>{
-    return(
-      <Partners image={item.image}/>
+  const PartnerCompanies = partner.map(item => {
+    return (
+      <Partners image={item.image} />
     )
   })
   return (
     <div className="container">
-      <TopSection/>
-      <Header/>
+      <TopSection />
+      <Header />
       <div className='menu-container'>
         <MainMenu />
       </div>
@@ -90,9 +89,9 @@ function App() {
       <div className='Partners'>
         {PartnerCompanies}
       </div>
-      <LastSliderFull/>
-      <Footer/>
-      <DetailPage/>
+      <LastSliderFull />
+      <Footer />
+      <DetailPage />
     </div>
   );
 }

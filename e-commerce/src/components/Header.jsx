@@ -1,5 +1,6 @@
-
+import { useState } from "react";
 export default function Header() {
+  const [show, SetShow] = useState(false);
 
   return (
     <header>
@@ -16,7 +17,15 @@ export default function Header() {
           <a href='#'>Sign In</a>
         </a>
         <a href='#' className='signIn'>
-          <img className='symbols' src="../images/symbols/heart.png" alt="" />
+          <img className='symbols' src="../images/symbols/heart.png" alt="" 
+            onClick={() => SetShow(!show)}/>
+            {show ? 
+            <div id="wishlist">
+              <h5>Wishlist</h5>
+              <hr />
+              <div></div>
+            </div> : ""
+            }
           <div>0</div>
         </a>
         <a href='#' className='signIn'>
