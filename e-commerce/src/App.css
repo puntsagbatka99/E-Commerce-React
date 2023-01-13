@@ -263,3 +263,18 @@ li::marker{
 .secondSlider{
   margin-bottom: 80px;
 }
+
+#wishlist{
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  color: black;
+  width: 300px;
+  height: 280px;
+  top: 140px;
+  right: 805px;
+  z-index: 2;
+  border: 1px solid #ADADAD;
+}
