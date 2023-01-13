@@ -1,4 +1,4 @@
-import { InputGroup } from "react-bootstrap";
+
 import { Button } from "react-bootstrap";
 import TopSection from "./AboveHeader";
 import Header from "./Header";
@@ -45,7 +45,7 @@ export default function DetailPage() {
                             <p style={{ color: "#30BD57", margin: "0" }}>In stock</p>
                         </div>
                     </div>
-                    <p style={{ color: "#5D5D5D" }}>Hurry up! only 34 product left in stock!</p>
+                    <p style={{ color: "#5D5D5D" }}>Hurry up! only 34 product left in stock! dfasdfasdfasdfsadf</p>
                     <hr />
                     <div style={{ display: "flex", alignItems: "center" }}>
                         <p style={{ margin: "0", marginRight: "20px" }}>Color :</p>
