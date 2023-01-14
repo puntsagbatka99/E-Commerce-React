@@ -1,4 +1,3 @@
-
 import './App.css';
 import MainMenu from './components/MainMenu';
 import Sliders from './components/Slider';
@@ -18,13 +17,16 @@ import LastSliderFull from './components/LastSliderFull';
 import Footer from './components/Footer';
 import secondSliderData from './data/secondSlider';
 import SecondSlider from './components/SecondSlider';
+import DetailPage from './components/Details';
+import TopSection from './components/AboveHeader';
+import Header from './components/Header';
 
 
 
 function App() {
   const secondSlider = secondSliderData.map(element => {
-    return(
-    <SecondSlider image={element.image} title={element.title} items={element.items}/>
+    return (
+      <SecondSlider image={element.image} title={element.title} items={element.items} />
     )
   })
 
@@ -37,8 +39,8 @@ function App() {
   )
 
   const profileSection = profileData.map(item => {
-    return(
-    <ProfileItems image={item.image} name={item.name} text={item.text} />
+    return (
+      <ProfileItems image={item.image} name={item.name} text={item.text} />
     )
   })
   var settings = {
@@ -49,49 +51,15 @@ function App() {
     slidesToScroll: 3
   };
 
-  const PartnerCompanies = partner.map(item =>{
-    return(
-      <Partners image={item.image}/>
+  const PartnerCompanies = partner.map(item => {
+    return (
+      <Partners image={item.image} />
     )
   })
   return (
     <div className="container">
-      <div className="topSection">
-        <p>Need help? Call us (+98) 0234 456 789</p>
-        <div className="TSRightSide">
-          <div className='TSRSitems'>
-            <img className='symbols' src="../images/symbols/location.png" alt="" />
-            <p>Our store</p>
-          </div>
-          <div className='TSRSitems'>
-            <img className='symbols' src="../images/symbols/truck.png" alt="" />
-            <p>Track your order</p>
-          </div>
-        </div>
-      </div>
-      <header>
-        <div className='headerLeftSide'>
-          <img src="../images/images/logo1.png" alt="" />
-          <div className='search'>
-            <input type="text" placeholder='Search anything here' />
-            <button id='searchBtn'>Search</button>
-          </div>
-        </div>
-        <div className='headerRightSide'>
-          <a className='signIn'>
-            <img className='symbols' src="../images/symbols/profile.png" alt="" />
-            <a href='#'>Sign In</a>
-          </a>
-          <a href='#' className='signIn'>
-            <img className='symbols' src="../images/symbols/heart.png" alt="" />
-            <div>0</div>
-          </a>
-          <a href='#' className='signIn'>
-            <img className='symbols' src="../images/symbols/cart.png" alt="" />
-            <div>0</div>
-          </a>
-        </div>
-      </header>
+      <TopSection />
+      <Header />
       <div className='menu-container'>
         <MainMenu />
       </div>
@@ -121,8 +89,9 @@ function App() {
       <div className='Partners'>
         {PartnerCompanies}
       </div>
-      <LastSliderFull/>
-      <Footer/>
+      <LastSliderFull />
+      <Footer />
+      <DetailPage />
     </div>
   );
 }
