@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 export default function Header() {
   const [show, SetShow] = useState(false);
 
@@ -13,20 +14,22 @@ export default function Header() {
         </div>
       </div>
       <div className='headerRightSide'>
-        <a className='signIn'>
-          <img className='symbols' src="../images/symbols/profile.png" alt="" />
-          <a href='#'>Sign In</a>
-        </a>
+        <Link to={"/sign-up"}>
+          <a className='signIn'>
+            <img className='symbols' src="../images/symbols/profile.png" alt="" />
+            <a style={{ textDecoration: "none" }} href='#'>Sign In</a>
+          </a>
+        </Link>
         <a href='#' className='signIn'>
-          <img className='symbols' src="../images/symbols/heart.png" alt="" 
-            onClick={() => SetShow(!show)}/>
-            {show ? 
+          <img className='symbols' src="../images/symbols/heart.png" alt=""
+            onClick={() => SetShow(!show)} />
+          {show ?
             <div id="wishlist">
               <h5>Wishlist</h5>
               <hr />
               <div></div>
             </div> : ""
-            }
+          }
           <div>0</div>
         </a>
         <a href='#' className='signIn'>
