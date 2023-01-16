@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 export default function Header() {
   const [show, SetShow] = useState(false);
 
   return (
     <header>
       <div className='headerLeftSide'>
-        <img src="../images/images/logo1.png" alt="" />
+        <Link to={"/"}><img src="../images/images/logo1.png" alt="" /></Link>
         <div className='search'>
           <input type="text" placeholder='Search anything here' />
           <button id='searchBtn'>Search</button>
