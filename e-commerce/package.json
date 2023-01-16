@@ -13,6 +13,7 @@
     "react-bootstrap": "^2.7.0",
     "react-bootstrap-star-rating": "^3.5.5-alpha.0.3",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "react-stars": "^2.2.5",

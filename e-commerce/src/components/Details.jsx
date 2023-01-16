@@ -12,11 +12,6 @@ import Footer from "./Footer";
 export default function DetailPage() {
     return (
         <div>
-            <TopSection />
-            <Header />
-            <div className='menu-container'>
-                <MainMenu />
-            </div>
             <div style={{ display: "flex", alignItems: "center", height: "76px" }}>
                 <h1 style={{ color: "#3A3A3A", fontSize: "16px", margin: "0" }}>Home</h1>
                 <img style={{ widht: "24px", height: "24px", margin: "0 20px" }} src="images/symbols/rightArrow.png" alt="" />

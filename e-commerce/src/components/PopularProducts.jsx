@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import ReactStars from "react-stars"
+import { Link } from "react-router-dom"
 
 function ProductFunc(props) {
     
@@ -19,7 +20,8 @@ function ProductFunc(props) {
                     count={5}
                     size={24}
                     color2={'#ffd700'} />
-                <Button onClick={() => {handleUpVote(props.id)}} id='smallTruck' style={{ position: "absolute", bottom: "29px", right: "17px", width: "45px", height: "42px", backgroundColor: "#EDA415", borderRadius: "50px", border: "1px solid #EDA415", display: 'flex', justifyContent: "center", alignItems: "center" }}><img style={{ width: "17px", height: "17px" }} src="images/symbols/cart.png" alt="" /></Button>
+                <Link to={"/detail-page"}><Button onClick={() => {handleUpVote(props.id)}} id='smallTruck' style={{ position: "absolute", bottom: "29px", right: "17px", width: "45px", height: "42px", backgroundColor: "#EDA415", borderRadius: "50px", border: "1px solid #EDA415", display: 'flex', justifyContent: "center", alignItems: "center" }}><img style={{ width: "17px", height: "17px" }} src="images/symbols/cart.png" alt="" />
+                </Button></Link>
             </Card.Body>
         </Card>
 
