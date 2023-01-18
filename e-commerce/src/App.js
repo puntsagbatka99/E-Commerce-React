@@ -6,10 +6,13 @@ import TopSection from './components/AboveHeader';
 import Header from './components/Header';
 import MainMenu from './components/MainMenu';
 import SignUp from './components/SignUp';
+import { useState } from 'react';
 
 
 
 function App() {
+  const [addWishList, setAddWishList] = useState([]);
+  console.log("addWishList", addWishList)
   return (
     <div className='container'>
       <TopSection />
@@ -18,7 +21,7 @@ function App() {
         <MainMenu />
       </div>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home addWishList={addWishList} setAddWishList={setAddWishList} />} />
         <Route path="/detail-page" element={<DetailPage />} />
         <Route path='/sign-up' element={<SignUp />} />
       </Routes>

@@ -18,7 +18,7 @@ import secondSliderData from './data/secondSlider';
 import SecondSlider from './components/SecondSlider';
 
 
-export default function Home() {
+export default function Home({addWishList, setAddWishList}) {
     const secondSlider = secondSliderData.map(element => {
         return (
             <SecondSlider image={element.image} title={element.title} items={element.items} />
@@ -67,7 +67,7 @@ export default function Home() {
                 {secondSlider}
             </Slider>
             <div className='PPSection'>
-                <PopularProducts />
+                <PopularProducts addWishList={addWishList} setAddWishList={setAddWishList} />
             </div>
             <div className='salePic'>
                 <SalePic />

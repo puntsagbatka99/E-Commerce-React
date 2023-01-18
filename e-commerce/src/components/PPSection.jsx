@@ -5,12 +5,12 @@ import ProductFunc from "./PopularProducts"
 import PPheaderRightSide from "./PPheader"
 
 
-function PopularProducts() {
-    const PopularProductItemFunc = PPItems.map(element => {
-        return (
-            <ProductFunc title={element.title} price={element.price} image={element.image} id={element.id}/>
-        )
-    })
+function PopularProducts({addWishList, setAddWishList}) {
+    // const PopularProductItemFunc = PPItems.map(element => {
+    //     return (
+    //         <ProductFunc title={element.title} price={element.price} image={element.image} id={element.id} addWishList={addWishList} setAddWishList={setAddWishList}/>
+    //     )
+    // })
     const PPheader = PPhead.map(items => {
         return(
         <PPheaderRightSide title={items.title} />
@@ -25,7 +25,13 @@ function PopularProducts() {
                     {PPheader}
                 </div>
             </div>
-            {PopularProductItemFunc}
+            <>
+            {PPItems.map(element => {
+                return (
+                    <ProductFunc title={element.title} price={element.price} image={element.image} id={element.id} addWishList={addWishList} setAddWishList={setAddWishList}/>
+                )})
+            }
+            </>
         </div>
     )
 }
