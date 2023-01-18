@@ -12,6 +12,11 @@ import Footer from "./Footer";
 export default function DetailPage() {
     return (
         <div>
+            <TopSection />
+            <Header />
+            <div className='menu-container'>
+                <MainMenu />
+            </div>
             <div style={{ display: "flex", alignItems: "center", height: "76px" }}>
                 <h1 style={{ color: "#3A3A3A", fontSize: "16px", margin: "0" }}>Home</h1>
                 <img style={{ widht: "24px", height: "24px", margin: "0 20px" }} src="images/symbols/rightArrow.png" alt="" />
@@ -92,17 +97,17 @@ export default function DetailPage() {
                 <div style={{ backgroundColor: "#003f62", width: "196px", height: "40px", display: "flex", justifyContent: "center", alignItems: "center" }} ><a style={{ backgroundColor: "#003F62", color: "white" }} href="#">Write a review</a></div>
             </div>
             <h1 style={{ color: "#1B5A7D", fontSize: "27px", fontWeight: "600", margin: "70px 0px" }}>Related product</h1>
-            <div style={{display:"flex", marginBottom:"100px"}}>
+            <div style={{ display: "flex", marginBottom: "100px" }}>
                 <Card style={{ width: "309px", height: "314px", position: "relative", margin: "0 auto", borderRadius: "20px", paddingTop: "10px" }}>
-                    <img style={{ width: "188px", height: "170px", margin:"0 auto" }} src="images/images/camera2.png" alt="" />
+                    <img style={{ width: "188px", height: "170px", margin: "0 auto" }} src="images/images/camera2.png" alt="" />
                     <Button id='smallHeart' style={{ position: "absolute", top: "28px", right: "40px", width: "28px", height: "28px", backgroundColor: "#B3D4E5", borderRadius: "50px", border: "1px solid #B3D4E5", display: 'flex', justifyContent: "center", alignItems: "center" }}><img style={{ width: "12px", height: "11px" }} src="images/symbols/heart.png" alt="heart" /></Button>
-                    <div style={{display:"flex", justifyContent:"space-around", marginTop:"50px"}}>
+                    <div style={{ display: "flex", justifyContent: "space-around", marginTop: "50px" }}>
                         <Button style={{ display: "flex", justifyContent: "space-around", alignItems: "center", width: "205px", height: "60px", backgroundColor: "#87BCD9", border: "1px solid #87BCD9", borderRadius: "20px", fontSize: "16px", fontWeight: "600", color: "black", textAlign: "start" }}>Add to Cart <div style={{ display: "flex", justifyContent: "center", alignItems: "center", backgroundColor: "#EDA415", width: "31px", height: "31px", borderRadius: "50px" }}><img style={{ width: "17px", height: "17px" }} src="images/symbols/truck.png" alt="" /></div></Button>
-                        <Button style={{display:"flex", justifyContent:"center", alignItems:"center", width:"71px", height:"60px", backgroundColor:"#87BCD9", border:"1px solid #87bcd9", borderRadius:"20px"}}><img src="images/symbols/eyes.png" alt="" /></Button>
+                        <Button style={{ display: "flex", justifyContent: "center", alignItems: "center", width: "71px", height: "60px", backgroundColor: "#87BCD9", border: "1px solid #87bcd9", borderRadius: "20px" }}><img src="images/symbols/eyes.png" alt="" /></Button>
                     </div>
                 </Card>
                 <Card style={{ width: "309px", height: "314px", position: "relative", margin: "0 auto", borderRadius: "20px", paddingTop: "10px" }}>
-                    <img style={{ width: "188px", height: "170px", margin:"0 auto" }} src="images/images/laptop.png" alt="" />
+                    <img style={{ width: "188px", height: "170px", margin: "0 auto" }} src="images/images/laptop.png" alt="" />
                     <Button id='smallHeart' style={{ position: "absolute", top: "28px", right: "40px", width: "28px", height: "28px", backgroundColor: "#B3D4E5", borderRadius: "50px", border: "1px solid #B3D4E5", display: 'flex', justifyContent: "center", alignItems: "center" }}><img style={{ width: "12px", height: "11px" }} src="images/symbols/heart.png" alt="heart" /></Button>
                     <Card.Body>
                         <Card.Title style={{ fontSize: "17px", color: "#003F62", fontWeight: "500" }}>Notebook</Card.Title>
@@ -114,7 +119,7 @@ export default function DetailPage() {
                     </Card.Body>
                 </Card>
                 <Card style={{ width: "309px", height: "314px", position: "relative", margin: "0 auto", borderRadius: "20px", paddingTop: "10px" }}>
-                    <img style={{ width: "188px", height: "170px", margin:"0 auto" }} src="images/images/headphones.png" alt="" />
+                    <img style={{ width: "188px", height: "170px", margin: "0 auto" }} src="images/images/headphones.png" alt="" />
                     <Button id='smallHeart' style={{ position: "absolute", top: "28px", right: "40px", width: "28px", height: "28px", backgroundColor: "#B3D4E5", borderRadius: "50px", border: "1px solid #B3D4E5", display: 'flex', justifyContent: "center", alignItems: "center" }}><img style={{ width: "12px", height: "11px" }} src="images/symbols/heart.png" alt="heart" /></Button>
                     <Card.Body>
                         <Card.Title style={{ fontSize: "17px", color: "#003F62", fontWeight: "500" }}>Wireless headphones</Card.Title>
@@ -126,7 +131,7 @@ export default function DetailPage() {
                     </Card.Body>
                 </Card>
                 <Card style={{ width: "309px", height: "314px", position: "relative", margin: "0 auto", borderRadius: "20px", paddingTop: "10px" }}>
-                    <img style={{ width: "188px", height: "170px", margin:"0 auto" }} src="images/images/game.png" alt="" />
+                    <img style={{ width: "188px", height: "170px", margin: "0 auto" }} src="images/images/game.png" alt="" />
                     <Button id='smallHeart' style={{ position: "absolute", top: "28px", right: "40px", width: "28px", height: "28px", backgroundColor: "#B3D4E5", borderRadius: "50px", border: "1px solid #B3D4E5", display: 'flex', justifyContent: "center", alignItems: "center" }}><img style={{ width: "12px", height: "11px" }} src="images/symbols/heart.png" alt="heart" /></Button>
                     <Card.Body>
                         <Card.Title style={{ fontSize: "17px", color: "#003F62", fontWeight: "500" }}>Controller</Card.Title>
@@ -138,7 +143,7 @@ export default function DetailPage() {
                     </Card.Body>
                 </Card>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

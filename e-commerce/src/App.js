@@ -7,6 +7,7 @@ import Header from './components/Header';
 import MainMenu from './components/MainMenu';
 import SignUp from './components/SignUp';
 import { useState } from 'react';
+import Cart from './components/Cart';
 
 
 
@@ -15,15 +16,12 @@ function App() {
   console.log("addWishList", addWishList)
   return (
     <div className='container'>
-      <TopSection />
-      <Header />
-      <div className='menu-container'>
-        <MainMenu />
-      </div>
+      
       <Routes>
         <Route path='/' element={<Home addWishList={addWishList} setAddWishList={setAddWishList} />} />
         <Route path="/detail-page" element={<DetailPage />} />
         <Route path='/sign-up' element={<SignUp />} />
+        <Route path='/cart' element={<Cart />} />
       </Routes>
     </div>
   )

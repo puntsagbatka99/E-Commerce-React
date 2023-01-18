@@ -32,10 +32,12 @@ export default function Header() {
           }
           <div>0</div>
         </a>
-        <a href='#' className='signIn'>
-          <img className='symbols' src="../images/symbols/cart.png" alt="" />
-          <div>0</div>
-        </a>
+        <Link to={"/cart"}>
+          <a href='#' className='signIn'>
+            <img className='symbols' src="../images/symbols/cart.png" alt="" />
+            <div>0</div>
+          </a>
+        </Link>
       </div>
     </header>
   )
