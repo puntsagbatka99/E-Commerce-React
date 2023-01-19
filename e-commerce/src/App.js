@@ -11,14 +11,14 @@ import Cart from './components/Cart';
 
 
 function App() {
-  const [addWishList, setAddWishList] = useState([]);
+  const [wishlist, setWishlist] = useState([]);
 
   return (
     <div className='container'>
       <TopSection />
-      <Header addWishList={addWishList} setAddWishList={setAddWishList} />
+      <Header wishlist={wishlist} setWishlist={setWishlist} />
       <Routes>
-        <Route path='/' element={<Home addWishList={addWishList} setAddWishList={setAddWishList} />} />
+        <Route path='/' element={<Home wishlist={wishlist} setWishlist={setWishlist} />} />
         <Route path="/detail-page" element={<DetailPage />} />
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/cart' element={<Cart />} />

@@ -5,7 +5,7 @@ import ProductFunc from "./PopularProducts"
 import PPheaderRightSide from "./PPheader"
 
 
-function PopularProducts({addWishList, setAddWishList}) {
+function PopularProducts(props) {
     // const PopularProductItemFunc = PPItems.map(element => {
     //     return (
     //         <ProductFunc title={element.title} price={element.price} image={element.image} id={element.id} addWishList={addWishList} setAddWishList={setAddWishList}/>
@@ -28,7 +28,7 @@ function PopularProducts({addWishList, setAddWishList}) {
             <>
             {PPItems.map(element => {
                 return (
-                    <ProductFunc title={element.title} price={element.price} image={element.image} id={element.id} addWishList={addWishList} setAddWishList={setAddWishList}/>
+                    <ProductFunc title={element.title} price={element.price} image={element.image} id={element.id} wishlist={props.wishlist} setWishlist={props.setWishlist}/>
                 )})
             }
             </>

@@ -16,12 +16,10 @@ import LastSliderFull from './components/LastSliderFull';
 import Footer from './components/Footer';
 import secondSliderData from './data/secondSlider';
 import SecondSlider from './components/SecondSlider';
-import TopSection from "./components/AboveHeader";
-import Header from "./components/Header";
 import MainMenu from "./components/MainMenu";
 
 
-export default function Home({addWishList, setAddWishList}) {
+export default function Home(props) {
     
     const secondSlider = secondSliderData.map(element => {
         return (
@@ -74,7 +72,7 @@ export default function Home({addWishList, setAddWishList}) {
                 {secondSlider}
             </Slider>
             <div className='PPSection'>
-                <PopularProducts addWishList={addWishList} setAddWishList={setAddWishList} />
+                <PopularProducts wishlist={props.wishlist} setWishlist={props.setWishlist} />
             </div>
             <div className='salePic'>
                 <SalePic />
