@@ -21,7 +21,8 @@ import Header from "./components/Header";
 import MainMenu from "./components/MainMenu";
 
 
-export default function Home({ addWishList, setAddWishList }) {
+export default function Home({addWishList, setAddWishList}) {
+    
     const secondSlider = secondSliderData.map(element => {
         return (
             <SecondSlider image={element.image} title={element.title} items={element.items} />
@@ -56,8 +57,6 @@ export default function Home({ addWishList, setAddWishList }) {
     })
     return (
         <div className="container">
-            <TopSection />
-            <Header addWishList={addWishList} setAddWishList={setAddWishList} />
             <div className='menu-container'>
                 <MainMenu />
             </div>

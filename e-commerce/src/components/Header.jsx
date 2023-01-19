@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header(props) {
   const [show, SetShow] = useState(false);
 
   return (
@@ -23,14 +23,7 @@ export default function Header() {
         <a href='#' className='signIn'>
           <img className='symbols' src="../images/symbols/heart.png" alt=""
             onClick={() => SetShow(!show)} />
-          {show ?
-            <div id="wishlist">
-              <h5>Wishlist</h5>
-              <hr />
-              <div></div>
-            </div> : ""
-          }
-          <div>0</div>
+          <div>{props.wishlist.length}</div>
         </a>
         <Link to={"/cart"}>
           <a href='#' className='signIn'>
