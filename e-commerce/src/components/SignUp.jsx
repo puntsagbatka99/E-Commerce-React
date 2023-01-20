@@ -10,8 +10,6 @@ export default function SignUp() {
     }
     return (
         <div>
-            <TopSection />
-            <Header />
             <div className="container" style={{ display: "flex", flexDirection: "column", justifyContent: "center", paddingBottom: "200px", height: "100vh", width: "360px" }}>
                 <h1>Sign-Up</h1>
                 <form onSubmit={signUp}>

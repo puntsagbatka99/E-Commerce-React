@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import ReactStars from "react-stars"
 import { Link } from "react-router-dom"
 import { ToastContainer, toast } from 'react-toastify';
+import { Heart, HeartFill } from "react-bootstrap-icons";
 
 function ProductFunc(props) {
     const [heart, setHeart] = useState(false)
@@ -23,7 +24,7 @@ function ProductFunc(props) {
         <Card style={{ width: "309px", height: "314px", position: "relative", margin: "0 auto", borderRadius: "20px", paddingTop: "10px" }}>
             <img style={{ width: "188px", height: "153px" }} src={props.image} alt="" />
             <Button onClick={() => { handleUpVote(props.id) }} id='smallHeart' style={{ position: "absolute", top: "28px", right: "40px", width: "28px", height: "28px", backgroundColor: "#B3D4E5", borderRadius: "50px", border: "1px solid #B3D4E5", display: 'flex', justifyContent: "center", alignItems: "center" }}>
-                {heart ? <img style={{ width: "12px", height: "11px", backgroundColor: 'red', borderRadius:"50px" }} src="images/symbols/heart.png" alt="heart"/> : <img style={{ width: "12px", height: "11px" }} src="images/symbols/heart.png" alt="heart" />}
+                {heart ? <i style={{width:"18px", height:"18px", color:"red"}}><HeartFill/></i> :  <i style={{width:"18px", height:"18px"}}><Heart/></i> }
             </Button>
             <Card.Body>
                 <Card.Title style={{ fontSize: "17px", color: "#003F62", fontWeight: "500" }}>{props.title}</Card.Title>

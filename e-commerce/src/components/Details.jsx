@@ -12,8 +12,6 @@ import Footer from "./Footer";
 export default function DetailPage() {
     return (
         <div>
-            <TopSection />
-            <Header />
             <div className='menu-container'>
                 <MainMenu />
             </div>
