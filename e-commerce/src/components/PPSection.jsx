@@ -21,9 +21,9 @@ function PopularProducts(props) {
                 </div>
             </div>
             <>
-            {PPItems.map(element => {
+            {PPItems.map((element) => {
                 return (
-                    <ProductFunc title={element.title} price={element.price} image={element.image} id={element.id} wishlist={props.wishlist} setWishlist={props.setWishlist}/>
+                    <ProductFunc product={element} title={element.title} price={element.price} image={element.image} id={element.id} wishlist={props.wishlist} setWishlist={props.setWishlist}/>
                 )})
             }
             </>

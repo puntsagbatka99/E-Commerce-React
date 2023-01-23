@@ -33,15 +33,7 @@ function ProductFunc(props) {
                 console.log("heart clicked");
                 // setLiked(!liked)
                 if (!liked) {
-                    const likedProduct = {
-                        id: product.id,
-                        image: product.image,
-                        title: product.title,
-                        price: product.price,
-                        liked: true
-                    }
-                    console.log(likedProduct)
-                    props.setWishlist([...props.wishlist, likedProduct])
+                    props.setWishlist([...props.wishlist, product])
                 } else {
                     props.setWishlist(
                         props.wishlist.filter(w => w.id !== product.id)
