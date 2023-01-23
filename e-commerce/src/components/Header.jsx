@@ -4,6 +4,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 
 
 export default function Header(props) {
+  console.log(props)
 
   return (
     <header>
@@ -29,12 +30,12 @@ export default function Header(props) {
               <div>{props.wishlist.length}</div>
             </Dropdown.Toggle>
 
-            <Dropdown.Menu style={{backgroundColor:"white", width:"200px"}}>
+            <Dropdown.Menu style={{ backgroundColor: "white", width: "200px" }}>
               {
                 props.wishlist.map((w, index) => {
                   return (
                     <div style={{ display: "flex" }}>
-                      <Dropdown.Item style={{height:"50px"}} href="#/action-1">{w.name}</Dropdown.Item>
+                      <div className="item">{w.title}</div>
                       <button
                         onClick={() => {
                           console.log("remove from wishlist")
